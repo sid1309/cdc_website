@@ -5,21 +5,19 @@ import { ArrowUp, Mail, Phone } from "lucide-react"
 
 export function NewFooter() {
   return (
-    <footer id="contact" className="bg-slate-800 text-white relative">
+    <footer id="contact" className="bg-slate-800 text-white relative py-4">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {/* Contact At Section */}
           <div>
             <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-500 pb-2 inline-block">Contact At</h3>
             <div className="space-y-4">
               <p className="text-gray-300 leading-relaxed">
-                Office of Career Services (OCS),
-                <br />
-                Indian Institute of Technology, Tirupati,
+                Indian Institute of Technology, Tirupati
                 <br />
                 Andhra Pradesh,
                 <br />
-                India-517601.
+                India - 517619.
               </p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
@@ -28,7 +26,7 @@ export function NewFooter() {
                     href="mailto:office.placement@iittp.ac.in"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    office.placement@iittp.ac.in
+                  placement_officer@iittp.ac.in
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
@@ -37,7 +35,7 @@ export function NewFooter() {
                     href="mailto:office.internship@iittp.ac.in"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    office.internship@iittp.ac.in
+                    placement@iittp.ac.in
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
@@ -67,12 +65,12 @@ export function NewFooter() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Intern Brochure
+                <a href="https://docs.google.com/document/d/11LhF0ejg4GjpGzz7w2RxKdHp8DCRD5rfsodmgYuXE68/edit?tab=t.0#heading=h.22g88jf3mc9a" className="text-gray-300 hover:text-white transition-colors">
+                  Placement Policies
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://cdc.iittp.ac.in/pdfs/AIPCGuidelines.pdf" className="text-gray-300 hover:text-white transition-colors">
                   AIPC Guidelines
                 </a>
               </li>
@@ -89,12 +87,12 @@ export function NewFooter() {
             <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-500 pb-2 inline-block">External Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  IIT Hyderabad
+                <a href="https://www.iittp.ac.in/" className="text-gray-300 hover:text-white transition-colors">
+                  IIT Tirupati
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://sa.iittp.ac.in/" className="text-gray-300 hover:text-white transition-colors">
                   Student Gymkhana
                 </a>
               </li>

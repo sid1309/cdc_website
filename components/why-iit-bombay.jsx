@@ -13,17 +13,12 @@ export function WhyIITBombay() {
         <div className="absolute top-1/2 right-1/3 w-16 h-16 bg-white rounded-full"></div>
       </div>
       <div className="container mx-auto px-4 relative">
-        <h2 className="text-4xl font-bold text-center mb-8">Why IIT Tirupati</h2>
+        <h2 className="text-4xl font-bold text-center mb-8">Why Recruit from IIT Tirupati</h2>
         <p className="text-center text-lg leading-relaxed mb-16 max-w-6xl mx-auto">
-          Established in 2009, as an institute of national importance, IIT Tirupati is recognized worldwide as a leader
-          in the field of research and education in engineering and sciences. Our mission is to create an ambience in
-          which new ideas and creativity flourish. The motto of IIT Tirupati is to provide learning blended with
-          excellence, to create leaders of tomorrow. The dynamic and constantly evolving academic program reflects the
-          institute's commitment to stay in tune with the expanding frontiers of knowledge worldwide. Extracurricular
-          activities are also treated with equal importance towards overall development making the students at IIT
-          Tirupati fit to take on the challenges faced in the competitive corporate world. Backed by the support of
-          Alumni in different sectors and guidance of esteemed professors, we strive to offer highly nurturing
-          environment to all its students.
+          IIT Tirupati is one of the most rapidly developing third-generation IITs. The campus offers modern labs, digital classrooms, and eco-friendly facilities, supporting advanced learning and innovation. We employ faculty from renowned institutes in India and abroad. With an excellent teacher to student ratio, students benefit from close interaction with faculty, going practical insights and engaging in research. The curriculum allows students to select electives, minors from various streams of science and engineering. Almost all undergraduates secure internships with leading companies and research organizations, ensuring practical exposure and workplace readiness.
+          <br/>
+          Holds 40+ MoUs with corporate firms like Kia, Nvidia Graphics Private Limited and also international universities such as Canada's University of Calgary, Texas A&M Engineering Equipment Station, and Nagaoka University of Technology(Japan), Indian Navy and ISRO. Regular workshops and training sessions are conducted to enhance students’ technical, professional, and soft skills, preparing them for diverse upcoming workspace challenges.
+
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center">

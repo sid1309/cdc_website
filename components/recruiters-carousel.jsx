@@ -1,5 +1,10 @@
 "use client"
 
+import React, { useCallback } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+
 export function RecruitersCarousel() {
   const companies = [
     { name: "Amazon", logo: "/images/amazon-logo.png" },
@@ -21,48 +26,68 @@ export function RecruitersCarousel() {
     { name: "Netflix", logo: "/placeholder.svg?height=60&width=120&text=Netflix" },
   ]
 
-  // Triple the array to ensure seamless infinite scroll
-  const triplicatedCompanies = [...companies, ...companies, ...companies]
+  // Initialize Embla Carousel with the Autoplay plugin
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, align: 'start' }, 
+    [Autoplay({ playOnInit: true, delay: 3000, stopOnInteraction: false })]
+  )
+
+  // Callback functions for the arrow buttons
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
 
   return (
-    <section className="py-16 bg-gray-50 overflow-hidden">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Our Recruiters</h2>
-        <div className="relative">
-          <div className="flex animate-scroll-seamless">
-            {triplicatedCompanies.map((company, index) => (
-              <div
-                key={`${company.name}-${index}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
-                style={{ minWidth: "150px" }}
-              >
-                <img
-                  src={company.logo || "/placeholder.svg"}
-                  alt={company.name}
-                  className="h-16 w-auto object-contain hover:scale-110 transition-all duration-300 rounded-lg"
-                />
-              </div>
-            ))}
+        
+        {/* Carousel container */}
+        <div className="relative group">
+          {/* The viewport for the carousel */}
+          <div className="overflow-hidden" ref={emblaRef}>
+            {/* The scrollable container */}
+            <div className="flex">
+              {companies.map((company, index) => (
+                // Each slide
+                <div 
+                  className="relative flex-shrink-0 mx-8 flex items-center justify-center" 
+                  key={`${company.name}-${index}`}
+                  style={{ flexBasis: "150px" }}
+                >
+                  <img
+                    src={company.logo || "/placeholder.svg"}
+                    alt={company.name}
+                    className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-110 rounded-lg"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Left Arrow Button */}
+          <button
+            onClick={scrollPrev}
+            className="absolute top-1/2 left-0 -translate-y-1/2 p-2 bg-white/70 hover:bg-white rounded-full shadow-md transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="h-6 w-6 text-gray-700" />
+          </button>
+
+          {/* Right Arrow Button */}
+          <button
+            onClick={scrollNext}
+            className="absolute top-1/2 right-0 -translate-y-1/2 p-2 bg-white/70 hover:bg-white rounded-full shadow-md transition-opacity duration-200 opacity-0 group-hover:opacity-100 z-10"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="h-6 w-6 text-gray-700" />
+          </button>
         </div>
       </div>
-      <style jsx>{`
-        @keyframes scroll-seamless {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(calc(-100% / 3));
-          }
-        }
-        .animate-scroll-seamless {
-          animation: scroll-seamless 45s linear infinite;
-          width: max-content;
-        }
-        .animate-scroll-seamless:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   )
 }

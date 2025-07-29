@@ -55,8 +55,8 @@ export function DirectorsMessage() {
         We wish our recruiting organizations and graduating students a successful placement season ahead.
       </p>
       <div className="mt-8 pt-6 border-t border-gray-200">
-        <p className="text-gray-800 font-medium italic">Prof. Shireesh Kedare,</p>
-        <p className="text-gray-700 italic">Energy Science and Engineering chair Professor and</p>
+        <p className="text-gray-800 font-medium italic">Prof. K.N. Satyanarayana,</p>
+        <p className="text-gray-700 italic">Civil & Environmental Engineering Professor</p>
         <p className="text-gray-700 italic">Director, IIT Tirupati</p>
       </div>
     </div>
@@ -78,8 +78,10 @@ export function DirectorsMessage() {
           <div>
             <div className="text-[#6366f1] text-sm font-semibold mb-4 uppercase tracking-wide">Director's Message</div>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Among the first three institutes to gain recognition under the Institute of Eminence (IoE) scheme, IIT
-              Tirupati continues its upward journey of excellence in world university rankings...
+              Welcome esteemed recruiters and industry partners to Indian Institute of Technology Tirupati.
+              <br />
+              Established in 2015, IT Tirupati aims to lead in higher education with global impact. We offer B.Tech programs in Civil, Chemical, Computer Science, Electrical, and Mechanical Engineering...
+
             </p>
             <Button
               className="bg-[#6366f1] hover:bg-[#5855eb] text-white mb-8"
@@ -88,8 +90,8 @@ export function DirectorsMessage() {
               Read more
             </Button>
             <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-2">Prof. Shireesh Kedare</h3>
-              <p className="text-gray-600">Energy Science and Engineering chair Professor</p>
+              <h3 className="text-xl font-semibold mb-2">Prof. K.N. Satyanarayana</h3>
+              <p className="text-gray-600">Civil & Environmental Engineering Professor</p>
             </div>
           </div>
         </div>

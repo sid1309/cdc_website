@@ -5,60 +5,43 @@ export function RecruitmentProcess() {
     {
       number: "1",
       title:
-        "The Placement Office appoints a point of contact for you and sends invitations to recruiting organizations",
+        "The Career Development Centre (CDC) at IIT Tirupati invites recruiters with relevant information.",
     },
     {
       number: "2",
-      title: "Recruiters interested in hiring will create their online account on",
+      title: "Recruiters register on the online CDC web portal by creating an account.",
       link: "https://campus.placements.iitb.ac.in/auth/recruiter/login",
     },
     {
       number: "3",
       title:
-        "To complete the registration, you will have to make a payment as per the registration amount (Only for Placements)",
+        "Recruiters fills the online job notification form containing details of the job profile using the portal.",
     },
     {
       number: "4",
       title:
-        "Recruiters can now create jobs/internships containing the details of opportunity as required by the Placement Office",
+        "If the recruiter is interested in conducting pre-placement talk they can send a request along with the preferred dates.",
     },
     {
       number: "5",
       title:
-        "The details of the job are verified by the executive officers. (Remuneration details and any other ambiguous information)",
+        "The job notification form is made available online to all the eligible students.",
     },
     {
       number: "6",
       title:
-        "After successful verification, the job is made available online to the students, as per dates decided by the Placement Office",
+        "Students apply online to companies’ job profiles from the portal.",
     },
     {
       number: "7",
       title:
-        "Interested students show their willingness to appear for the recruitment process of a company by applying for its Job",
+        "The CDC office informs the recruiters of the dates for the on-campus placement process. Recruiters visit the campus on allotted dates and conduct the selection process.",
     },
     {
       number: "8",
-      title: "Companies can view resumes of interested students and shortlist students using their online account.",
+      title: "The recruiter is required to submit the list of selected and waitlisted (if desired) students to the CDC office soon after the completion of the selection process.",
     },
-    {
-      number: "9",
-      title:
-        "Companies can proceed with their tests/screening process after finalizing the schedule in coordination with Placement Office",
-    },
-    {
-      number: "10",
-      title: "Companies shortlist the selected students for final interview process",
-    },
-    {
-      number: "11",
-      title:
-        "Placement Office allots dates to organizations for campus interviews based on various details given by companies",
-    },
-    {
-      number: "12",
-      title: "The organization confirms the dates with the Placement Office",
-    },
+
   ]
 
   return (
@@ -76,7 +59,7 @@ export function RecruitmentProcess() {
             <Card key={step.number} className="bg-white shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="text-4xl font-bold text-gray-300 flex-shrink-0">{step.number}</div>
+                  <div className="text-4xl font-bold text-300 flex-shrink-0" style={{ color: "#da4a47" }} >{step.number}</div>
                   <div className="text-sm text-gray-700 leading-relaxed">
                     {step.title}
                     {step.link && (

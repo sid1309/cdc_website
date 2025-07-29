@@ -40,58 +40,26 @@ export function AcademicInfo() {
   const academicFacilitiesContent = (
     <div className="space-y-4">
       <p className="text-gray-700 leading-relaxed">
-        Academics at IIT Tirupati has the flexibility to evolve with ever changing requirements. Various activities are
-        carried out to promote research, enhance creativity, learn new skills, implement innovative solutions and
-        develop entrepreneurial mindset.
+        IIT Tirupati offers a robust academic environment with 6 B.Tech programs, multiple M.Tech, M.Sc, and Ph.D options, and a strong interdisciplinary focus. The institute has a faculty strength of 119, supporting over 1,100 students, including 852 undergraduates. The new permanent campus includes a modern lecture hall complex, advanced labs, smart classrooms, and library facilities. Students undergo 8-week industrial training after the 6th semester and participate in research, international conferences, and exchange programs through MoUs with global institutions. Regular seminars, workshops, and industry lectures complement classroom learning, equipping students for real-world challenges.
       </p>
-      <p className="text-gray-700 leading-relaxed">
-        The institute provides state-of-the-art laboratories, research facilities, and computational resources to
-        support cutting-edge research across various disciplines. Our faculty members are actively involved in
-        interdisciplinary research projects that address real-world challenges.
-      </p>
-      <ul className="list-disc list-inside text-gray-700 space-y-2">
-        <li>Advanced research laboratories with modern equipment</li>
-        <li>High-performance computing facilities</li>
-        <li>Collaborative research centers</li>
-        <li>Innovation and entrepreneurship support</li>
-        <li>Industry-academia partnerships</li>
-      </ul>
     </div>
   )
 
   const idcContent = (
     <div className="space-y-4">
       <p className="text-gray-700 leading-relaxed">
-        IDC School of Design is a unique mix of pedagogic experimentation with pragmatic design approach. IDC has
-        academic programs in the areas of Industrial Design, Visual Communication, Interaction Design, Animation and
-        Mobility & Vehicle Design.
+        The Center for Atomic, Molecular and Optical Sciences & Technologies (CAMOST) is India’s first nationally recognized center dedicated to research in Atomic, Molecular, and Optical (AMO) sciences. It was established to tackle critical challenges in cutting-edge AMO domains, which have far-reaching applications in health, communication, navigation, metrology, space, internet, and quantum technologies. CAMOST is a collaborative initiative between IIT Tirupati and IISER Tirupati, two leading institutions in science and engineering education. It brings together researchers from across India to work under a unified platform. The center was officially inaugurated on 14th August 2020 by Dr. Arabinda Mitra, Scientific Secretary in the Office of the Principal Scientific Advisor to the Government of India, marking the eve of India’s 73rd Independence Day.
       </p>
-      <p className="text-gray-700 leading-relaxed">
-        The center focuses on human-centered design thinking and innovation, preparing students to become design leaders
-        in various industries. Our curriculum combines theoretical knowledge with hands-on practical experience.
-      </p>
-      <ul className="list-disc list-inside text-gray-700 space-y-2">
-        <li>Industrial Design programs</li>
-        <li>Visual Communication specialization</li>
-        <li>Interaction Design courses</li>
-        <li>Animation and multimedia</li>
-        <li>Mobility and Vehicle Design</li>
-        <li>Design thinking workshops</li>
-      </ul>
     </div>
   )
 
   const departmentsContent = (
     <div className="space-y-4">
       <p className="text-gray-700 leading-relaxed">
-        IIT Tirupati is known as a premier engineering, science and technology institute in India. Currently, it offers
-        an opportunity to learn in 20 varied departments and pursue 10 programs across undergraduate, postgraduate, and
-        doctoral levels.
+         IIT Tirupati is an emerging institute of national importance dedicated to excellence in engineering, science, and technology education. The institute currently offers undergraduate, postgraduate, and doctoral programs across multiple departments.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        This university has strived and evolved over years to offer the students finest of its facilities for
-        multi-dimensional growth. It is a home for design, management school and several emerging centres in technical,
-        non-technical & entrepreneurial sector.
+        With a focus on academic rigor and holistic development, IIT Tirupati is continuously expanding its infrastructure and academic offerings. It hosts vibrant departments in core engineering and sciences, along with growing initiatives in design, management, and entrepreneurship, fostering multi-disciplinary learning and innovation.
       </p>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
@@ -102,18 +70,6 @@ export function AcademicInfo() {
             <li>Mechanical Engineering</li>
             <li>Civil Engineering</li>
             <li>Chemical Engineering</li>
-            <li>Aerospace Engineering</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-gray-800 mb-2">Science Departments:</h4>
-          <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
-            <li>Physics</li>
-            <li>Chemistry</li>
-            <li>Mathematics</li>
-            <li>Earth Sciences</li>
-            <li>Biosciences & Bioengineering</li>
-            <li>Energy Science & Engineering</li>
           </ul>
         </div>
       </div>
@@ -129,9 +85,8 @@ export function AcademicInfo() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Academic Facilities</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Academics at IIT Tirupati has the flexibility to evolve with ever changing requirements. Various
-                  activities are carried out to promote research, enhance creativity, learn new skills, implement
-                  innovative solutions and ...
+                  IIT Tirupati offers a robust academic environment with 6 B.Tech programs, multiple M.Tech, M.Sc, and Ph.D options, and a strong interdisciplinary focus. The institute has a faculty strength of 119, supporting over 1,100 students, including 852 undergraduates...
+
                 </p>
                 <Button
                   className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
@@ -143,17 +98,15 @@ export function AcademicInfo() {
             </Card>
             <Card className="hover:shadow-md transition-shadow cursor-pointer">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4">Industrial Design Centre</h3>
+                <h3 className="text-xl font-semibold mb-4">CAMOST</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  IDC School of Design is a unique mix of pedagogic experimentation with pragmatic design approach. IDC
-                  has academic programs in the areas of Industrial Design, Visual Communication, Interaction Design,
-                  Animation and Mobility & Vehicle Design.
+                  The Center for Atomic, Molecular and Optical Sciences & Technologies (CAMOST) is India’s first nationally recognized center dedicated to research in Atomic, Molecular, and Optical (AMO) sciences. It was established to tackle critical challenges...
                 </p>
                 <Button
                   className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
-                  onClick={() => openModal("Industrial Design Centre", idcContent)}
+                  onClick={() => openModal("CAMOST", idcContent)}
                 >
-                  Explore IDC
+                  Explore CAMOST
                 </Button>
               </CardContent>
             </Card>
@@ -163,14 +116,9 @@ export function AcademicInfo() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Departments & Programs at IIT Tirupati</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  IIT Tirupati is known as a premier engineering, science and technology institute in India. Currently,
-                  it offers an opportunity to learn in 20 varied departments and pursue 10 programs.
+                   IIT Tirupati is an emerging institute of national importance dedicated to excellence in engineering, science, and technology education. The institute currently offers undergraduate, postgraduate, and doctoral programs across multiple departments...
                 </p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  This university has strived and evolved over years to offer the students finest of its facilities for
-                  multi-dimensional growth. It is a home for design, management school and several emerging centres in
-                  technical, non-technical & entrepreneurial sector.
-                </p>
+              
                 <Button
                   className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
                   onClick={() => openModal("Departments & Programs at IIT Tirupati", departmentsContent)}

@@ -40,12 +40,11 @@ export function Header() {
     <header className="bg-[#6366f1] text-white sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-            <div className="w-8 h-8 bg-[#6366f1] rounded-full flex items-center justify-center text-white text-xs font-bold">
-              IIT
-            </div>
-          </div>
-          <h1 className="text-xl font-semibold tracking-wide">Placement Cell, IIT Tirupati</h1>
+          <img
+            src="/images/logo.png" style={{ width: '60px'}}
+            alt="IIT Tirupati Logo"
+          />
+          <h1 className="text-xl font-semibold tracking-wide">Career Development Center, IIT Tirupati</h1>
         </div>
 
         {/* Desktop Navigation */}
@@ -54,7 +53,7 @@ export function Header() {
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="hover:text-gray-200 transition-colors cursor-pointer font-medium text-base tracking-wide"
+              className="hover:text-gray-200 transition-colors cursor-pointer font-semibold tracking-wide text-base tracking-wide"
             >
               {item.label}
             </button>
