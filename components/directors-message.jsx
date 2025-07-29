@@ -80,7 +80,7 @@ export function DirectorsMessage() {
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               Welcome esteemed recruiters and industry partners to Indian Institute of Technology Tirupati.
               <br />
-              Established in 2015,IIT Tirupati aims to lead in higher education with global impact. We offer B.Tech programs in Civil, Chemical, Computer Science, Electrical, and Mechanical Engineering...
+              Established in 2015, IIT Tirupati aims to lead in higher education with global impact. We offer B.Tech programs in Civil, Chemical, Computer Science, Electrical, and Mechanical Engineering...
 
             </p>
             <Button

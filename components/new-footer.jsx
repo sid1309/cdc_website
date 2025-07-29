@@ -1,9 +1,70 @@
 "use client"
-
+import { useState } from "react"
+import { InfoModal } from "./info-modal-team"
 import { Button } from "@/components/ui/button"
 import { ArrowUp, Mail, Phone } from "lucide-react"
 
+export function TeamCard({ name, position, email, imageUrl }) {
+  return (
+    <div className="bg-white rounded-2xl shadow-md p-6 max-w-sm text-center">
+      <img
+        src={imageUrl}
+        alt={name}
+        className="w-24 h-24 rounded-full mx-auto object-cover mb-4"
+      />
+      <h3 className="text-xl font-semibold text-gray-800">{name}</h3>
+      <p className="text-sm text-gray-500 mb-2">{position}</p>
+      <div className="flex items-center justify-center gap-2 text-blue-600 hover:underline">
+        <Mail className="w-4 h-4" />
+        <a href={`mailto:${email}`} className="text-sm">
+          {email}
+        </a>
+      </div>
+    </div>
+  )
+}
+
 export function NewFooter() {
+
+  const [modalState, setModalState] = useState({
+    isOpen: false,
+    title: "",
+    content: null,
+  })
+
+  const openModal = (title, content) => {
+    setModalState({
+      isOpen: true,
+      title,
+      content,
+    })
+  }
+
+  const closeModal = () => {
+    setModalState({
+      isOpen: false,
+      title: "",
+      content: null,
+    })
+  }
+
+  const TeamContent = (
+    <div className="space-y-6 ">
+
+      <div className="flex flex-wrap  justify-center gap-6 text-gray-700 "> 
+        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
+        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
+        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
+        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
+        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
+        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
+        
+        
+      </div>
+      
+    </div>)
+
+  
   return (
     <footer id="contact" className="bg-slate-800 text-white relative py-4">
       <div className="container mx-auto px-4 py-12">
@@ -40,11 +101,11 @@ export function NewFooter() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-blue-400" />
-                  <span className="text-gray-300">040 2301 6810</span>
+                  <span className="text-gray-300">+91 9966830630</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-blue-400" />
-                  <span className="text-gray-300">040 2301 6184</span>
+                  <span className="text-gray-300">+91 8985464383</span>
                 </div>
               </div>
             </div>
@@ -75,7 +136,8 @@ export function NewFooter() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a className="text-gray-300 hover:text-white transition-colors " 
+                onClick={() => openModal("Meet our Team", TeamContent)} >
                   Meet our Team
                 </a>
               </li>
@@ -108,6 +170,12 @@ export function NewFooter() {
       >
         <ArrowUp className="w-6 h-6" />
       </Button>
+      <InfoModal
+        isOpen={modalState.isOpen}
+        onClose={closeModal}
+        title={modalState.title}
+        content={modalState.content}
+      />
     </footer>
   )
 }
