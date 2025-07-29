@@ -1,0 +1,23 @@
+/* Custom styles for the application */
+.carousel-animation {
+  animation: scroll-seamless 45s linear infinite;
+  width: max-content;
+}
+
+.carousel-animation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-seamless {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+/* Modal backdrop blur */
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+}
