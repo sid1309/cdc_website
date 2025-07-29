@@ -35,7 +35,7 @@ export function RecruitersCarousel() {
     { name: "Versa", logo: "/images/versa.png" },
     { name: "Thoughtspot", logo: "/images/thoughtspot.png" },
     { name: "ABB", logo: "/images/abb.png" },
-    { name: "Accenture",logo:"/Images/accenture.png" },
+    { name: "Accenture",logo:"/images/accenture.png" },
     { name: "Turing", logo:"images/turing.png" },
 
   ]

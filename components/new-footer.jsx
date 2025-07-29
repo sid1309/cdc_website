@@ -49,22 +49,61 @@ export function NewFooter() {
   }
 
   const TeamContent = (
-    <div className="space-y-6 ">
+    <div className="space-y-12 text-gray-700">
 
-      <div className="flex flex-wrap  justify-center gap-6 text-gray-700 "> 
-        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
-        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
-        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
-        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
-        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
-        <TeamCard  name="Dr. S. Ramesh" position="Faculty Advisor" email="ramesh@iittp.ac.in" imageUrl="/images/ramesh.jpg"/>
-        
-        
+      {/* Faculty Advisors */}
+      <div>
+        <h2 className="text-xl font-bold mb-6 text-center">Faculty Advisors</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {Array(2).fill().map((_, i) => (
+            <TeamCard
+              key={`faculty-${i}`}
+              name="Dr. S. Ramesh"
+              position="Faculty Advisor"
+              email="ramesh@iittp.ac.in"
+              imageUrl="/images/ramesh.jpg"
+            />
+          ))}
+        </div>
       </div>
-      
-    </div>)
 
-  
+      {/* Placement Coordinators */}
+      <div>
+        <h2 className="text-xl font-bold mb-6 text-center">Placement Coordinators</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {Array(3).fill().map((_, i) => (
+            <TeamCard
+              key={`coordinator-${i}`}
+              name={`John Doe ${i + 1}`}
+              position="Placement Coordinator"
+              email={`johndoe${i + 1}@iittp.ac.in`}
+              imageUrl="/images/placeholder.jpg"
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Placement Representatives */}
+      <div>
+        <h2 className="text-xl font-bold mb-6 text-center">Placement Representatives</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {Array(4).fill().map((_, i) => (
+            <TeamCard
+              key={`rep-${i}`}
+              name={`Jane Rep ${i + 1}`}
+              position="Placement Representative"
+              email={`janerep${i + 1}@iittp.ac.in`}
+              imageUrl="/images/placeholder.jpg"
+            />
+          ))}
+        </div>
+      </div>
+
+    </div>
+  )
+
+
+
   return (
     <footer id="contact" className="bg-slate-800 text-white relative py-4">
       <div className="container mx-auto px-4 py-12">
@@ -87,7 +126,7 @@ export function NewFooter() {
                     href="mailto:office.placement@iittp.ac.in"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                  placement_officer@iittp.ac.in
+                    placement_officer@iittp.ac.in
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
@@ -136,8 +175,8 @@ export function NewFooter() {
                 </a>
               </li>
               <li>
-                <a className="text-gray-300 hover:text-white transition-colors " 
-                onClick={() => openModal("Meet our Team", TeamContent)} >
+                <a className="text-gray-300 hover:text-white transition-colors "
+                  onClick={() => openModal("Meet our Team", TeamContent)} >
                   Meet our Team
                 </a>
               </li>
