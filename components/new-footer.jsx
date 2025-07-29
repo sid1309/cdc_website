@@ -116,7 +116,7 @@ export function NewFooter() {
             <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-500 pb-2 inline-block">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://iittp.pod.ai/pages/campus-placements" className="text-gray-300 hover:text-white transition-colors">
                   Placement Registration link
                 </a>
               </li>

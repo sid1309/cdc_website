@@ -1,0 +1,11 @@
+.navbar-diagonal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #a0262c; /* red */
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  z-index: 0;
+}
