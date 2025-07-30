@@ -1,8 +1,56 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { User, Briefcase, Users, CheckCircle } from "lucide-react"
 import Image from "next/image"
+import { InfoModal } from "./info-modal"
+import { useState } from "react"
 
 export function HeroSection() {
+
+  const [modalState, setModalState] = useState({
+      isOpen: false,
+      title: "",
+      content: null,
+    })
+  
+    const openModal = (title, content) => {
+      setModalState({
+        isOpen: true,
+        title,
+        content,
+      })
+    }
+  
+    const closeModal = () => {
+      setModalState({
+        isOpen: false,
+        title: "",
+        content: null,
+      })
+    }
+
+     const ResumeBuilder = (
+    <div className="space-y-4">
+      <p className="text-gray-700 leading-relaxed">
+        <div className="flex flex-col gap-4 items-center justify-center h-full">
+            <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-4 text-lg flex items-center gap-3 justify-start w-90">
+              <User className="w-6 h-6" />
+              <a href="https://iittp.pod.ai/" target="_blank" rel="noopener noreferrer"> 
+              Build Resume using POD (Auto Resume Builder)
+              </a>
+            </Button>
+              
+            <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-16 text-lg flex items-center gap-3 justify-start w-90">
+              <Briefcase className="w-6 h-6" />
+              <a href="#" target="_blank" rel="noopener noreferrer">
+              Build Resume using Overleaf (LaTeX)   
+              </a>
+            </Button>
+        </div>
+      </p>
+    </div>
+  )
+
   return (
     <section className="relative min-h-[600px] flex items-center">
       <Image src="/images/iit-tirupati-campus.jpg" alt="IIT Tirupati Campus" fill className="object-cover" priority />
@@ -25,21 +73,35 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-col gap-4 items-center justify-center h-full">
-            <Button className="bg-[#113F67]   hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
+            <Button  className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
               <User className="w-6 h-6" />
+              <a href="https://iittp.pod.ai/" target="_blank" rel="noopener noreferrer">
               Student
+              </a> 
             </Button>
             <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
               <Briefcase className="w-6 h-6" />
+              <a href="https://iittp.pod.ai/pages/campus-placements" target="_blank" rel="noopener noreferrer">
               Recruiter
+              </a>
             </Button>
             <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
               <Users className="w-6 h-6" />
               Placement Team
             </Button>
+            <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64" onClick={() => openModal("Build Your Resume", ResumeBuilder)}>
+              <Users className="w-6 h-6" />
+              Resume Builder
+            </Button>
           </div>
         </div>
       </div>
+      <InfoModal
+        isOpen={modalState.isOpen}
+        onClose={closeModal}
+        title={modalState.title}
+        content={modalState.content}
+      />
     </section>
   )
 }
