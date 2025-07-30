@@ -73,14 +73,14 @@ export function Header() {
 
       {/* Mobile Navigation Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-[#6366f1] border-t border-white/20 z-40 shadow-lg">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-[#113F67] border-t border-white/20 z-40 shadow-lg">
           <nav className="container mx-auto px-4 py-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="hover:text-gray-200 transition-colors py-2 border-b border-white/10 last:border-b-0 text-left cursor-pointer font-medium text-base tracking-wide"
+                  className="hover:text-[#d92c54]  transition-colors py-2 border-b border-white/10 last:border-b-0 text-left cursor-pointer font-medium text-base tracking-wide"
                 >
                   {item.label}
                 </button>
