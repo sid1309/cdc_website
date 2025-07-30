@@ -76,13 +76,13 @@ export function DirectorsMessage() {
             />
           </div>
           <div>
-            <div className="text-[#6366f1] text-sm font-semibold mb-4 uppercase tracking-wide">Director's Message</div>
+            <div className="text-[#113F67]  text-sm font-semibold mb-4 uppercase tracking-wide">Director's Message</div>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               Welcome esteemed recruiters and industry partners to Indian Institute of Technology Tirupati. Established in 2015, IIT Tirupati aims to lead in higher education with global impact. We offer B.Tech programs in Civil, Chemical, Computer Science, Electrical, and Mechanical Engineering...
 
             </p>
             <Button
-              className="bg-[#6366f1] hover:bg-[#5855eb] text-white mb-8"
+              className="bg-[#113F67] hover:bg-[#D92C54] text-white mb-8"
               onClick={() => openModal("Director's message", directorsMessageContent)}
             >
               Read more

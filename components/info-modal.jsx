@@ -44,7 +44,7 @@ export function InfoModal({ isOpen, onClose, title, content }) {
 
         {/* Footer */}
         <div className="flex justify-end p-8 border-t bg-gray-50">
-          <Button onClick={onClose} className="bg-[#6366f1] hover:bg-[#5855eb] text-white">
+          <Button onClick={onClose} className="bg-[#113F67] hover:bg-[#D92C54] text-white">
             Close
           </Button>
         </div>

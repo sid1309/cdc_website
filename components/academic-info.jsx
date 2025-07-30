@@ -15,10 +15,10 @@ export function AcademicInfo() {
 
   const reports = [
     { title: "Placement Brochure 2024-25", year: "2024-25" },
-    { title: "Placement Report 2023-24", year: "2023-24" },
-    { title: "Placement Report 2022-23", year: "2022-23" },
-    { title: "Placement Report 2021-22", year: "2021-22" },
-    { title: "Placement Report 2020-21", year: "2020-21" },
+    { title: "Annual Report 2023-24", year: "2023-24" },
+    { title: "Annual Report 2022-23", year: "2022-23" },
+    { title: "Annual Report 2021-22", year: "2021-22" },
+    { title: "Annual Report 2020-21", year: "2020-21" },
   ]
 
   const openModal = (title, content) => {
@@ -92,7 +92,7 @@ export function AcademicInfo() {
                   IIT Tirupati offers a robust academic environment with 6 B.Tech programs, multiple M.Tech, M.Sc, and Ph.D options, and a strong interdisciplinary focus. The institute has a faculty strength of 119, supporting over 1,100 students, including 852 undergraduates...
                 </p>
                 <Button
-                  className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
+                  className="bg-[#113F67]  hover:bg-[#D92C54] text-white"
                   onClick={() => openModal("Academic Facilities", academicFacilitiesContent)}
                 >
                   See more
@@ -106,7 +106,7 @@ export function AcademicInfo() {
                   The Center for Atomic, Molecular and Optical Sciences & Technologies (CAMOST) is India’s first nationally recognized center dedicated to research in Atomic, Molecular, and Optical (AMO) sciences. It was established to tackle critical challenges...
                 </p>
                 <Button
-                  className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
+                  className="bg-[#113F67]  hover:bg-[#D92C54] text-white"
                   onClick={() => openModal("CAMOST", idcContent)}
                 >
                   Explore CAMOST
@@ -122,7 +122,7 @@ export function AcademicInfo() {
                   IIT Tirupati is an emerging institute of national importance dedicated to excellence in engineering, science, and technology education. The institute currently offers undergraduate, postgraduate, and doctoral programs across multiple departments...
                 </p>
                 <Button
-                  className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
+                  className="bg-[#113F67]  hover:bg-[#D92C54] text-white"
                   onClick={() => openModal("Departments & Programs at IIT Tirupati", departmentsContent)}
                 >
                   Know more
@@ -136,7 +136,7 @@ export function AcademicInfo() {
                   The National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) is a Government of India initiative aimed at advancing cutting-edge technologies that seamlessly integrate computation with physical processes in real-world environments.
                 </p>
                 <Button
-                  className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
+                  className="bg-[#113F67]  hover:bg-[#D92C54] text-white"
                   onClick={() =>
                     openModal(
                       "Technology Innovation Hub (TIH)",
@@ -165,9 +165,9 @@ export function AcademicInfo() {
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <FileText className="w-6 h-6 text-[#6366f1]" />
+                      <FileText className="w-6 h-6 text-[#113F67]" />
                       <div>
-                        <h4 className="font-medium text-[#6366f1]">
+                        <h4 className="font-medium text-[#113F67]">
                           {report.title.split(" ")[0]} {report.title.split(" ")[1]}
                         </h4>
                         <p className="text-sm text-gray-600">{report.year}</p>

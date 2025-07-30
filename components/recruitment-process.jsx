@@ -5,7 +5,7 @@ export function RecruitmentProcess() {
     {
       number: "1",
       title:
-        "The Career Development Centre (CDC) at IIT Tirupati invites recruiters with relevant information.",
+        "The Career Development Centre (CDC) at IIT Tirupati warmly invites esteemed recruiters to connect with our talented students by sharing detailed and relevant information.",
     },
     {
       number: "2",
@@ -15,7 +15,7 @@ export function RecruitmentProcess() {
     {
       number: "3",
       title:
-        "Recruiters fills the online job notification form containing details of the job profile using the portal.",
+        "Recruiters fill out the online job notification form, providing detailed information about the job role, eligibility criteria, and other relevant specifications using the CDC portal.",
     },
     {
       number: "4",
@@ -57,15 +57,11 @@ export function RecruitmentProcess() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step, index) => {
-            const isStep7 = index === 6
-            const isStep8 = index === 7
+            const isStep7 = index === 6;
+            const isStep8 = index === 7;
 
             const customClass =
-              isStep7
-                ? "lg:col-start-2"
-                : isStep8
-                ? "lg:col-start-3"
-                : ""
+              isStep7 ? "lg:col-start-1" : isStep8 ? "lg:col-start-2" : "";
 
             return (
               <Card
@@ -76,21 +72,21 @@ export function RecruitmentProcess() {
                   <div className="flex items-start gap-4">
                     <div
                       className="text-4xl font-bold flex-shrink-0"
-                      style={{ color: "#da4a47" }}
+                      style={{ color: "#113F67" }}
                     >
                       {step.number}
                     </div>
                     <div className="text-sm text-gray-700 leading-relaxed">
                       {step.title}
-                      {step.link && (
-                        <div className="mt-2">
+                      {index === 1 && step.link && (
+                        <div className="mt-4">
                           <a
                             href={step.link}
-                            className="text-[#6366f1] hover:underline break-all"
+                            className="inline-block px-4 py-2 bg-[#113F67] text-white rounded-md hover:bg-[#D92C54] transition"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            {step.link}
+                            Register Here
                           </a>
                         </div>
                       )}
@@ -98,7 +94,7 @@ export function RecruitmentProcess() {
                   </div>
                 </CardContent>
               </Card>
-            )
+            );
           })}
         </div>
       </div>

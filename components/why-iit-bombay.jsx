@@ -5,7 +5,7 @@ export function WhyIITBombay() {
   return (
     <section
       id="why-recruit"
-      className="py-16 bg-gradient-to-br from-[#1e3a8a] to-[#6366f1] text-white relative overflow-hidden"
+      className="py-16 bg-gradient-to-br from-[#113F67] to-[#34699A] text-white relative overflow-hidden"
     >
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-20 w-32 h-32 bg-white rounded-full"></div>

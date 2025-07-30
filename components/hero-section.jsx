@@ -25,15 +25,15 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-col gap-4 items-center justify-center h-full">
-            <Button className="bg-[#6366f1] hover:bg-[#5855eb] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
+            <Button className="bg-[#113F67]   hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
               <User className="w-6 h-6" />
               Student
             </Button>
-            <Button className="bg-[#6366f1] hover:bg-[#5855eb] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
+            <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
               <Briefcase className="w-6 h-6" />
               Recruiter
             </Button>
-            <Button className="bg-[#6366f1] hover:bg-[#5855eb] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
+            <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64">
               <Users className="w-6 h-6" />
               Placement Team
             </Button>

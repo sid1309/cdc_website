@@ -7,7 +7,7 @@ import { ArrowUp, Mail, Phone } from "lucide-react"
 
 export function TeamCard({ name, position, email, imageUrl }) {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-3 max-w-sm text-center">
+    <div className="bg-[#f5f8fb] rounded-2xl shadow-md p-3 max-w-sm text-center">
       <img
         src={imageUrl}
         alt={name}
@@ -67,10 +67,11 @@ export function NewFooter() {
       </div>
 
       {/* Placement Coordinators */}
-      <div>
+      <div className="flex flex-col items-center">
         <h2 className="text-xl font-bold mb-6 text-center">Placement Coordinators</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/ee22B037.png"/>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
+          <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/EE22B037.png"/>
+          <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/EE22B037.png"/>
         </div>
       </div>
 
@@ -116,7 +117,7 @@ export function NewFooter() {
 
 
   return (
-    <footer id="contact" className="bg-slate-800 text-white relative px-8 py-4">
+    <footer id="contact" className="bg-[#113F67]  text-white relative px-8 py-4">
       <div className="container mx-8 px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact At Section */}

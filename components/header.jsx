@@ -37,11 +37,11 @@ export function Header() {
   ]
 
   return (
-    <header className="bg-slate-800 text-white sticky top-0 z-50 ">
+    <header className="bg-[#113F67] text-white sticky top-0 z-50 ">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img
-            src="/images/logo.png" style={{ width: '60px'}}
+            src="/images/logo1.jpg" style={{ width: '60px'}}
             alt="IIT Tirupati Logo"
           />
           <h1 className="text-xl font-semibold tracking-wide">Career Development Center, IIT Tirupati</h1>
