@@ -58,7 +58,7 @@ export function NewFooter() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
           <TeamCard name={`Dr. Subbareddy Daggumati`} position="Faculty Advisor Placement"email={`subbareddy.daggumati@iittp.ac.in`} imageUrl="/Team_photo/fa.png"/>
-          <TeamCard name={`Dr. Sriram Sundar`} position="Faculty advisor career development and guidance"email={`sriram@iittp.ac.in`} imageUrl="/Team_photo/fa_cdc.png"/>
+          
           <TeamCard name={`Dr. Prashanth Vooka`} position="Faculty advisor Internships"email={`prashanthv@iittp.ac.in`} imageUrl="/Team_photo/fa_internship.png"/>
           <TeamCard name={`Abhinay IRALA`} position="Placement Officer"email={`placement_officer@iittp.ac.in`} imageUrl="/Team_photo/po1.png"/>
           <TeamCard name={`Prabhu Kiran Jakkula`} position="Placement Officer"email={`placement@iittp.ac.in`} imageUrl="/Team_photo/po2.png"/>
@@ -78,35 +78,35 @@ export function NewFooter() {
       <div>
         <h2 className="text-xl font-bold mb-6 text-center">Placement Representatives</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <TeamCard name={`SIDDHANT CHATSE`} position="Placement Representative"email={`cs22b016@iittp.ac.in`} imageUrl="/Team_photo/CS22B016.png"/>
-          <TeamCard name={`AMBALIYA SHANKHESH`} position="Placement Representative"email={`cs22b005@iittp.ac.in`} imageUrl="/Team_photo/CS22B005.png"/>
-          <TeamCard name={`ANIKET JOHRI`} position="Placement Representative"email={`cs22b028@iittp.ac.in`} imageUrl="/Team_photo/CS22B028.png"/>
-          <TeamCard name={`GOWLIKAR AJITESH`} position="Placement Representative"email={`cs24m118@iittp.ac.in`} imageUrl="/Team_photo/CS24M118.jpg"/>
+          <TeamCard name={`Siddhant Chatse`} position="Placement Representative"email={`cs22b016@iittp.ac.in`} imageUrl="/Team_photo/CS22B016.png"/>
+          <TeamCard name={`Ambaliya Shankesh`} position="Placement Representative"email={`cs22b005@iittp.ac.in`} imageUrl="/Team_photo/CS22B005.png"/>
+          <TeamCard name={`Aniket Johri`} position="Placement Representative"email={`cs22b028@iittp.ac.in`} imageUrl="/Team_photo/CS22B028.png"/>
+          <TeamCard name={`Gowlikar Ajitesh`} position="Placement Representative"email={`cs24m118@iittp.ac.in`} imageUrl="/Team_photo/CS24M118.jpg"/>
           <TeamCard name={`Yuvraj`} position="Placement Representative"email={`ee22b054@iittp.ac.in`} imageUrl="/Team_photo/EE22B054.jpg"/>
-          <TeamCard name={`VANAMA SAI SRINIVAS`} position="Placement Representative"email={`ee22b052@iittp.ac.in`} imageUrl="/Team_photo/EE22B052.jpg"/>
-          <TeamCard name={`SURAPURAJU KRISHNA NIKETH`} position="Placement Representative"email={`ee22b047@iittp.ac.in`} imageUrl="/Team_photo/EE22B047.jpg"/>
-          <TeamCard name={`AKSHATHA C`} position="Placement Representative"email={`ee24m118@iittp.ac.in`} imageUrl="/Team_photo/EE24M118.jpeg"/>
-          <TeamCard name={`GEGGILA KIRAN`} position="Placement Representative"email={`ee24m205@iittp.ac.in`} imageUrl="/Team_photo/EE24M205.jpg"/>
-          <TeamCard name={`RAJIT BILLOWRIA`} position="Placement Representative"email={`ee24m303@iittp.ac.in`} imageUrl="/Team_photo/EE24M303.jpg"/>
-          <TeamCard name={`ATHARV NAGAR`} position="Placement Representative"email={`me22b006@iittp.ac.in`} imageUrl="/Team_photo/ME22B006.png"/>
-          <TeamCard name={`DASARI PRANAVESH REDDY`} position="Placement Representative"email={`me22b017@iittp.ac.in`} imageUrl="/Team_photo/ME22B017.jpeg"/>
-          <TeamCard name={`JADA SAIKEERTHI`} position="Placement Representative"email={`me22b025@iittp.ac.in`} imageUrl="/Team_photo/ME22B025.jpg"/> 
-          <TeamCard name={`BONI SADGURUNAG KAUSHIK `} position="Placement Representative"email={`me24m116@iittp.ac.in`} imageUrl="/Team_photo/ME24M116.jpg"/> 
+          <TeamCard name={`Vanama Sai Srinivas`} position="Placement Representative"email={`ee22b052@iittp.ac.in`} imageUrl="/Team_photo/EE22B052.jpg"/>
+          <TeamCard name={`Surapuraju Krishna Niketh`} position="Placement Representative"email={`ee22b047@iittp.ac.in`} imageUrl="/Team_photo/EE22B047.jpg"/>
+          <TeamCard name={`Akshatha C`} position="Placement Representative"email={`ee24m118@iittp.ac.in`} imageUrl="/Team_photo/EE24M118.jpeg"/>
+          <TeamCard name={`Geggila Kiran`} position="Placement Representative"email={`ee24m205@iittp.ac.in`} imageUrl="/Team_photo/EE24M205.jpg"/>
+          <TeamCard name={`Rajit Billowria`} position="Placement Representative"email={`ee24m303@iittp.ac.in`} imageUrl="/Team_photo/EE24M303.jpg"/>
+          <TeamCard name={`Atharv Nagar`} position="Placement Representative"email={`me22b006@iittp.ac.in`} imageUrl="/Team_photo/ME22B006.png"/>
+          <TeamCard name={`Dasari Pranavesh Reddy`} position="Placement Representative"email={`me22b017@iittp.ac.in`} imageUrl="/Team_photo/ME22B017.jpeg"/>
+          <TeamCard name={`Jada Saikeerthi`} position="Placement Representative"email={`me22b025@iittp.ac.in`} imageUrl="/Team_photo/ME22B025.jpg"/> 
+          <TeamCard name={`Boni Sadgurunag Kaushik `} position="Placement Representative"email={`me24m116@iittp.ac.in`} imageUrl="/Team_photo/ME24M116.jpg"/> 
           <TeamCard name={`Kambala Kiran kumar`} position="Placement Representative"email={`me24m208@iittp.ac.in`} imageUrl="/Team_photo/ME24M208.jpg"/> 
-          <TeamCard name={`KUSHAGRA AGARWAL`} position="Placement Representative"email={`ch22b020@iittp.ac.in`} imageUrl="/Team_photo/CH22B020.png"/>
-          <TeamCard name={`PALAK KHANDELWAL`} position="Placement Representative"email={`ch22b026@iittp.ac.in`} imageUrl="/Team_photo/CH22B026.jpg"/>
+          <TeamCard name={`Kushagra Agarwal`} position="Placement Representative"email={`ch22b020@iittp.ac.in`} imageUrl="/Team_photo/CH22B020.png"/>
+          <TeamCard name={`Palak Khandelwal`} position="Placement Representative"email={`ch22b026@iittp.ac.in`} imageUrl="/Team_photo/CH22B026.jpg"/>
           <TeamCard name={`Aryan raj`} position="Placement Representative"email={`ch24m101@iittp.ac.in`} imageUrl="/Team_photo/CH24M101.jpg"/>
-          <TeamCard name={`ADARSH KUMAR`} position="Placement Representative"email={`ce22b001@iittp.ac.in`} imageUrl="/Team_photo/CE22B001.png"/>
-          <TeamCard name={`TANVI GUPTA`} position="Placement Representative"email={`ce22b035@iittp.ac.in`} imageUrl="/Team_photo/CE22B035.jpg"/>
+          <TeamCard name={`Adarsh Kumar`} position="Placement Representative"email={`ce22b001@iittp.ac.in`} imageUrl="/Team_photo/CE22B001.png"/>
+          <TeamCard name={`Tanvi Gupta`} position="Placement Representative"email={`ce22b035@iittp.ac.in`} imageUrl="/Team_photo/CE22B035.jpg"/>
           <TeamCard name={`Tarun Raj`} position="Placement Representative"email={`ce24m114@iittp.ac.in`} imageUrl="/Team_photo/CE24M114.jpg"/>
           <TeamCard name={`Omkar Pise`} position="Placement Representative"email={`ce24m205@iittp.ac.in`} imageUrl="/Team_photo/CE24M205.jpg"/>
           <TeamCard name={`Anna Tomy`} position="Placement Representative"email={`ce24m303@iittp.ac.in`} imageUrl="/Team_photo/CE24M303.jpg"/>
-          <TeamCard name={`AYUSH NAGLE`} position="Placement Representative"email={`ce24m404@iittp.ac.in`} imageUrl="/Team_photo/CE24M404.png"/>
+          <TeamCard name={`Ayush Nagle`} position="Placement Representative"email={`ce24m404@iittp.ac.in`} imageUrl="/Team_photo/CE24M404.png"/>
           
-          <TeamCard name={`DEEPAK KUMAR KAUSHAL`} position="Placement Representative"email={`ph24m003@iittp.ac.in`} imageUrl="/Team_photo/PH24M003.jpg"/> 
-          <TeamCard name={`NAVIN BALAJI VALLAKATI`} position="Placement Representative"email={`cy24m008@iittp.ac.in`} imageUrl="/Team_photo/CY24M008.png"/>
-          <TeamCard name={`DEBASISH PRADHAN`} position="Placement Representative"email={`ma24m004@iittp.ac.in`} imageUrl="/Team_photo/MA24M004.jpg"/>
-          <TeamCard name={`SOMPALLI PRANAV SURYA`} position="Placement Representative"email={`hs24m116@iittp.ac.in`} imageUrl="/Team_photo/HS24M116.png"/>
+          <TeamCard name={`Deepak Kumar Kaushal`} position="Placement Representative"email={`ph24m003@iittp.ac.in`} imageUrl="/Team_photo/PH24M003.jpg"/> 
+          <TeamCard name={`Navin Balaji Vallakati`} position="Placement Representative"email={`cy24m008@iittp.ac.in`} imageUrl="/Team_photo/CY24M008.png"/>
+          <TeamCard name={`Debasish Pradhan`} position="Placement Representative"email={`ma24m004@iittp.ac.in`} imageUrl="/Team_photo/MA24M004.jpg"/>
+          <TeamCard name={`Sompalli Pranav Surya`} position="Placement Representative"email={`hs24m116@iittp.ac.in`} imageUrl="/Team_photo/HS24M116.png"/>
         </div>
       </div>
 

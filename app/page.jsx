@@ -12,9 +12,9 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <HeroSection />
-      <DirectorsMessage />
-      <WhyIITBombay />
       <AcademicInfo />
+      <WhyIITBombay />
+      <DirectorsMessage />
       <RecruitmentProcess />
       <RecruitersCarousel />
       <NewFooter />

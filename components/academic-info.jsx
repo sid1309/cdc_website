@@ -63,13 +63,17 @@ export function AcademicInfo() {
       </p>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <h4 className="font-semibold text-gray-800 mb-2">Engineering Departments:</h4>
+          <h4 className="font-semibold text-gray-800 mb-2">Departments:</h4>
           <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
             <li>Computer Science & Engineering</li>
             <li>Electrical Engineering</li>
             <li>Mechanical Engineering</li>
             <li>Civil Engineering</li>
             <li>Chemical Engineering</li>
+            <li>Mathematics and Statistics Department</li>
+            <li>Chemistry Department</li>
+            <li>Physics Department</li>
+            <li>Humanities and Social Sciences Department</li>
           </ul>
         </div>
       </div>
