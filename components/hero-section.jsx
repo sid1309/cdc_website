@@ -177,7 +177,7 @@ export function HeroSection() {
               Placement Team
             </Button>
             <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-8 text-lg flex items-center gap-3 justify-start w-64" onClick={() => openModal("Build Your Resume", ResumeBuilder)}>
-              <Users className="w-6 h-6" />
+              <img src="resume.png" className="w-6 h-7" />
               Resume Builder
             </Button>
           </div>
