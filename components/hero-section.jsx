@@ -56,14 +56,14 @@ export function HeroSection() {
       <p className="text-gray-700 leading-relaxed">
         <div className="flex flex-col gap-4 items-center justify-center h-full">
             <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-4 text-lg flex items-center gap-3 justify-start w-90">
-              <User className="w-6 h-6" />
+              <img src="pod.png" className="w-6 h-6" />
               <a href="https://iittp.pod.ai/" target="_blank" rel="noopener noreferrer"> 
               Build Resume using POD (Auto Resume Builder)
               </a>
             </Button>
               
             <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-16 text-lg flex items-center gap-3 justify-start w-90">
-              <Briefcase className="w-6 h-6" />
+              <img src="overleaf.png" className="w-6 h-6" />
               <a href="#" target="_blank" rel="noopener noreferrer">
               Build Resume using Overleaf (LaTeX)   
               </a>
@@ -84,7 +84,7 @@ export function HeroSection() {
             <TeamCard name={`Dr. Subbareddy Daggumati`} position="Faculty Advisor Placement"email={`subbareddy.daggumati@iittp.ac.in`} imageUrl="/Team_photo/fa.png"/>
             
             <TeamCard name={`Dr. Prashanth Vooka`} position="Faculty advisor Internships"email={`prashanthv@iittp.ac.in`} imageUrl="/Team_photo/fa_internship.png"/>
-            <TeamCard name={`Abhinay IRALA`} position="Placement Officer"email={`placement_officer@iittp.ac.in`} imageUrl="/Team_photo/po1.png"/>
+            <TeamCard name={`Abhinay Irala`} position="Placement Officer"email={`placement_officer@iittp.ac.in`} imageUrl="/Team_photo/po1.png"/>
             <TeamCard name={`Prabhu Kiran Jakkula`} position="Placement Officer"email={`placement@iittp.ac.in`} imageUrl="/Team_photo/po2.png"/>
   
           </div>

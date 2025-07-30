@@ -60,7 +60,7 @@ export function NewFooter() {
           <TeamCard name={`Dr. Subbareddy Daggumati`} position="Faculty Advisor Placement"email={`subbareddy.daggumati@iittp.ac.in`} imageUrl="/Team_photo/fa.png"/>
           
           <TeamCard name={`Dr. Prashanth Vooka`} position="Faculty advisor Internships"email={`prashanthv@iittp.ac.in`} imageUrl="/Team_photo/fa_internship.png"/>
-          <TeamCard name={`Abhinay IRALA`} position="Placement Officer"email={`placement_officer@iittp.ac.in`} imageUrl="/Team_photo/po1.png"/>
+          <TeamCard name={`Abhinay Irala`} position="Placement Officer"email={`placement_officer@iittp.ac.in`} imageUrl="/Team_photo/po1.png"/>
           <TeamCard name={`Prabhu Kiran Jakkula`} position="Placement Officer"email={`placement@iittp.ac.in`} imageUrl="/Team_photo/po2.png"/>
 
         </div>
@@ -71,7 +71,7 @@ export function NewFooter() {
         <h2 className="text-xl font-bold mb-6 text-center">Placement Coordinators</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
           <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/pc1.png"/>
-          <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/pc2.png"/>
+          <TeamCard name={`Mulamalla Harshith Reddy`} position="Placement Coordinator"email={`placement_coord@iittp.ac.in`} imageUrl="/Team_photo/pc2.png"/>
         </div>
       </div>
 
