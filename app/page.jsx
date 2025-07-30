@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { DirectorsMessage } from "@/components/directors-message"
-import { WhyIITBombay } from "@/components/why-iit-bombay"
+import { WhyiitTirupati } from "@/components/why-iit-Tirupati"
 import { AcademicInfo } from "@/components/academic-info"
 import { RecruitmentProcess } from "@/components/recruitment-process"
 import { RecruitersCarousel } from "@/components/recruiters-carousel"
@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AcademicInfo />
-      <WhyIITBombay />
+      <WhyiitTirupati />
       <DirectorsMessage />
       <RecruitmentProcess />
       <RecruitersCarousel />

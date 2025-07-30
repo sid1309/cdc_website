@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Share2, Star, GraduationCap, BookOpen } from "lucide-react"
 
-export function WhyIITBombay() {
+export function WhyiitTirupati() {
   return (
     <section
       id="why-recruit"
