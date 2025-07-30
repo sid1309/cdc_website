@@ -14,11 +14,11 @@ export function AcademicInfo() {
   })
 
   const reports = [
-    { title: "Placement Brochure 2024-25", year: "2024-25" },
-    { title: "Annual Report 2023-24", year: "2023-24" },
-    { title: "Annual Report 2022-23", year: "2022-23" },
-    { title: "Annual Report 2021-22", year: "2021-22" },
-    { title: "Annual Report 2020-21", year: "2020-21" },
+    { title: "Placement Report 2023-24", year: "2023-24", url: "#" },
+    { title: "Annual Report 2023-24", year: "2023-24", url: "https://files.iittp.ac.in/pdfs/annualreport/Annual_Report_2023_24.pdf" },
+    { title: "Annual Report 2022-23", year: "2022-23", url: "https://files.iittp.ac.in/pdfs/annualreport/Annual_Report_2023.pdf" },
+    { title: "Annual Report 2021-22", year: "2021-22", url: "https://files.iittp.ac.in/pdfs/annualreport/IIT%20Annual%20Report%202021-2022.pdf" },
+    { title: "Annual Report 2020-21", year: "2020-21", url: "https://files.iittp.ac.in/pdfs/annualreport/IIT%20English%202020-2021.pdf" },
   ]
 
   const openModal = (title, content) => {
@@ -161,6 +161,7 @@ export function AcademicInfo() {
           </div>
           <div className="space-y-4">
             {reports.map((report, index) => (
+              <a key={index} href={report.url} target="_blank" rel="noopener noreferrer" className="block">
               <Card key={index} className="hover:shadow-md transition-shadow cursor-pointer">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
@@ -177,6 +178,7 @@ export function AcademicInfo() {
                   </div>
                 </CardContent>
               </Card>
+              </a>
             ))}
           </div>
         </div>
