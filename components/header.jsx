@@ -37,7 +37,7 @@ export function Header() {
   ]
 
   return (
-    <header className="bg-[#113F67] text-white sticky top-0 z-50 ">
+    <header className="bg-[#113F67]  text-white sticky top-0 z-50 ">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img
@@ -53,7 +53,7 @@ export function Header() {
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="hover:text-gray-200 transition-colors cursor-pointer font-semibold tracking-wide text-base tracking-wide"
+              className="hover:text-[#d92c54] transition-colors cursor-pointer font-semibold tracking-wide text-base tracking-wide"
             >
               {item.label}
             </button>

@@ -216,7 +216,7 @@ export function NewFooter() {
 
       {/* Scroll to Top Button */}
       <Button
-        className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg z-50"
+        className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-[#113f67] hover:bg-[#d92c54] shadow-lg z-50"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <ArrowUp className="w-6 h-6" />
