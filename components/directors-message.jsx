@@ -76,7 +76,7 @@ export function DirectorsMessage() {
             />
           </div>
           <div>
-            <div className="text-[#113F67]  text-sm font-semibold mb-4 uppercase tracking-wide">Director's Message</div>
+            <div className="text-[#113F67]  text-xl font-bold mb-4 tracking-wide">Director's Message</div>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               Welcome esteemed recruiters and industry partners to Indian Institute of Technology Tirupati. Established in 2015, IIT Tirupati aims to lead in higher education with global impact. We offer B.Tech programs in Civil, Chemical, Computer Science, Electrical, and Mechanical Engineering...
 
