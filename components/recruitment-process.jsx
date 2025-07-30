@@ -39,9 +39,9 @@ export function RecruitmentProcess() {
     },
     {
       number: "8",
-      title: "The recruiter is required to submit the list of selected and waitlisted (if desired) students to the CDC office soon after the completion of the selection process.",
+      title:
+        "The recruiter is required to submit the list of selected and waitlisted (if desired) students to the CDC office soon after the completion of the selection process.",
     },
-
   ]
 
   return (
@@ -50,30 +50,56 @@ export function RecruitmentProcess() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Recruitment process</h2>
           <p className="text-gray-600 text-lg max-w-4xl mx-auto">
-            Our process has evolved over year to ensure that our recruiters have a seamless hiring experience. Here we
-            have simplified the steps for you.
+            Our process has evolved over the years to ensure that our recruiters have a seamless hiring experience.
+            Here we have simplified the steps for you.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step) => (
-            <Card key={step.number} className="bg-white shadow-sm hover:shadow-md transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="text-4xl font-bold text-300 flex-shrink-0" style={{ color: "#da4a47" }} >{step.number}</div>
-                  <div className="text-sm text-gray-700 leading-relaxed">
-                    {step.title}
-                    {step.link && (
-                      <div className="mt-2">
-                        <a href={step.link} className="text-[#6366f1] hover:underline break-all">
-                          {step.link}
-                        </a>
-                      </div>
-                    )}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {steps.map((step, index) => {
+            const isStep7 = index === 6
+            const isStep8 = index === 7
+
+            const customClass =
+              isStep7
+                ? "lg:col-start-2"
+                : isStep8
+                ? "lg:col-start-3"
+                : ""
+
+            return (
+              <Card
+                key={step.number}
+                className={`bg-white shadow-sm hover:shadow-md transition-shadow ${customClass}`}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div
+                      className="text-4xl font-bold flex-shrink-0"
+                      style={{ color: "#da4a47" }}
+                    >
+                      {step.number}
+                    </div>
+                    <div className="text-sm text-gray-700 leading-relaxed">
+                      {step.title}
+                      {step.link && (
+                        <div className="mt-2">
+                          <a
+                            href={step.link}
+                            className="text-[#6366f1] hover:underline break-all"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {step.link}
+                          </a>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
       </div>
     </section>
