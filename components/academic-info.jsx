@@ -56,7 +56,7 @@ export function AcademicInfo() {
   const departmentsContent = (
     <div className="space-y-4">
       <p className="text-gray-700 leading-relaxed">
-         IIT Tirupati is an emerging institute of national importance dedicated to excellence in engineering, science, and technology education. The institute currently offers undergraduate, postgraduate, and doctoral programs across multiple departments.
+        IIT Tirupati is an emerging institute of national importance dedicated to excellence in engineering, science, and technology education. The institute currently offers undergraduate, postgraduate, and doctoral programs across multiple departments.
       </p>
       <p className="text-gray-700 leading-relaxed">
         With a focus on academic rigor and holistic development, IIT Tirupati is continuously expanding its infrastructure and academic offerings. It hosts vibrant departments in core engineering and sciences, along with growing initiatives in design, management, and entrepreneurship, fostering multi-disciplinary learning and innovation.
@@ -86,7 +86,6 @@ export function AcademicInfo() {
                 <h3 className="text-xl font-semibold mb-4">Academic Facilities</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   IIT Tirupati offers a robust academic environment with 6 B.Tech programs, multiple M.Tech, M.Sc, and Ph.D options, and a strong interdisciplinary focus. The institute has a faculty strength of 119, supporting over 1,100 students, including 852 undergraduates...
-
                 </p>
                 <Button
                   className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
@@ -112,18 +111,46 @@ export function AcademicInfo() {
             </Card>
           </div>
           <div>
-            <Card className="hover:shadow-md transition-shadow cursor-pointer">
+            <Card className="mb-8 hover:shadow-md transition-shadow cursor-pointer">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">Departments & Programs at IIT Tirupati</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                   IIT Tirupati is an emerging institute of national importance dedicated to excellence in engineering, science, and technology education. The institute currently offers undergraduate, postgraduate, and doctoral programs across multiple departments...
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  IIT Tirupati is an emerging institute of national importance dedicated to excellence in engineering, science, and technology education. The institute currently offers undergraduate, postgraduate, and doctoral programs across multiple departments...
                 </p>
-              
                 <Button
                   className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
                   onClick={() => openModal("Departments & Programs at IIT Tirupati", departmentsContent)}
                 >
                   Know more
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-md transition-shadow cursor-pointer">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">TIH</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  The National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) is a Government of India initiative aimed at advancing cutting-edge technologies that seamlessly integrate computation with physical processes in real-world environments.
+                </p>
+                <Button
+                  className="bg-[#6366f1] hover:bg-[#5855eb] text-white"
+                  onClick={() =>
+                    openModal(
+                      "Technology Innovation Hub (TIH)",
+                      <div className="space-y-4">
+                        <p className="text-gray-700 leading-relaxed">
+                          Cyber-Physical Systems (CPS) are intelligent, autonomous systems that integrate computation and physical processes, transforming sectors like energy, agriculture, transport, and healthcare. To harness this, the Government of India launched the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS), implemented by DST with an outlay of ₹3660 crore over 5 years.
+                        </p>
+                        <p className="text-gray-700 leading-relaxed">
+                          Under this, 25 Technology Innovation Hubs (TIHs) were established nationwide, including the TIH at IIT Tirupati (IITTNiF), which focuses on Positioning and Precision Technologies (PPTs) such as GIS, GPS, and remote sensing. The hub supports India’s self-reliance goals through R&D, industry partnerships, training, and standard development.
+                        </p>
+                        <p className="text-gray-700 leading-relaxed">
+                          IITTNiF aims to enable high-impact solutions across sectors via strategic collaborations, technology translation, and commercialization. Key initiatives include developing precision sensors, remote sensing for agriculture and resource monitoring, and promoting GIS-based inclusive growth models, aligned with missions like Make in India and Atmanirbhar Bharat.
+                        </p>
+                      </div>
+                    )
+                  }
+                >
+                  Explore TIH
                 </Button>
               </CardContent>
             </Card>
