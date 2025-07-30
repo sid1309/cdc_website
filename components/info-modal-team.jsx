@@ -32,6 +32,9 @@ export function InfoModal({ isOpen, onClose, title, content }) {
         {/* Header */}
         <div className="flex items-center justify-center p-8 border-b">
           <h2 className="text-2xl font-bold text-gray-800 text-center ">{title}</h2>
+          <Button variant="ghost" size="icon" onClick={onClose} className="hover:bg-gray-100">
+            <X className="w-6 h-6" />
+          </Button>
         </div>
 
         {/* Content */}

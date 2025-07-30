@@ -187,7 +187,7 @@ export function NewFooter() {
                 </a>
               </li>
               <li>
-                <a className="text-gray-300 hover:text-white transition-colors "
+                <a className="text-gray-300 hover:text-white transition-colors cursor-pointer"
                   onClick={() => openModal("Meet our Team", TeamContent)} >
                   Meet our Team
                 </a>

@@ -95,7 +95,7 @@ export function HeroSection() {
           <h2 className="text-xl font-bold mb-6 text-center">Placement Coordinators</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
             <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/pc1.png"/>
-            <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/pc2.png"/>
+            <TeamCard name={`Mulamalla Harshith Reddy`} position="Placement Coordinator"email={`placement_coord@iittp.ac.in`} imageUrl="/Team_photo/pc2.png"/>
           </div>
         </div>
   
