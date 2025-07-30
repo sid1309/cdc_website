@@ -30,11 +30,11 @@ export function InfoModal({ isOpen, onClose, title, content }) {
       {/* Modal */}
       <div className="relative bg-white rounded-lg shadow-2xl max-w-4xl w-full mx-8 max-h-[80vh] overflow-y-auto transform transition-all duration-300 scale-100">
         {/* Header */}
-        <div className="flex items-center justify-between p-8 border-b">
+        <div className="flex items-center justify-center p-8 border-b">
           <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
-          <Button variant="ghost" size="icon" onClick={onClose} className="hover:bg-gray-100">
+          {/* <Button variant="ghost" size="icon" onClick={onClose} className="hover:bg-gray-100">
             <X className="w-6 h-6" />
-          </Button>
+          </Button> */}
         </div>
 
         {/* Content */}

@@ -10,7 +10,7 @@ export function RecruitmentProcess() {
     {
       number: "2",
       title: "Recruiters register on the online CDC web portal by creating an account.",
-      link: "https://campus.placements.iitb.ac.in/auth/recruiter/login",
+      link: "https://iittp.pod.ai/pages/campus-placements",
     },
     {
       number: "3",

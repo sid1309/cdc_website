@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export function RecruitersCarousel() {
   const companies = [
-    { name: "Amazon", logo: "/images/amazon-logo.png" },
+    { name: "Amazon", logo: "/images/Amazon-Logo.png" },
     { name: "Google", logo: "/images/google.png" },
     { name: "Microsoft", logo: "/images/microsoft.png" },
     { name: "Qualcomm", logo: "/images/qualcomm.png" },
@@ -37,6 +37,7 @@ export function RecruitersCarousel() {
     { name: "ABB", logo: "/images/abb.png" },
     { name: "Accenture",logo:"/images/accenture.png" },
     { name: "Turing", logo:"images/turing.png" },
+    { name: "icici", logo: "/images/icici.png" },
 
   ]
 
