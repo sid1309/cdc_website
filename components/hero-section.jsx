@@ -56,9 +56,9 @@ export function HeroSection() {
       <p className="text-gray-700 leading-relaxed">
         <div className="flex flex-col gap-4 items-center justify-center h-full">
             <Button className="bg-[#113F67] hover:bg-[#D92C54] text-white py-6 px-4 text-lg flex items-center gap-3 justify-start w-90">
-              <img src="pod.png" className="w-6 h-6" />
-              <a href="https://iittp.pod.ai/" target="_blank" rel="noopener noreferrer"> 
-              Build Resume using POD (Auto Resume Builder)
+              <img src="erp.png" className="w-6 h-6" />
+              <a href="https://iittp.plumerp.co.in/prod/iittirupati/" target="_blank" rel="noopener noreferrer"> 
+              Build Resume using ERP (Auto Resume Builder)
               </a>
             </Button>
               
@@ -94,7 +94,7 @@ export function HeroSection() {
         <div className="flex flex-col items-center">
           <h2 className="text-xl font-bold mb-6 text-center">Placement Coordinators</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
-            <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/pc1.png"/>
+            <TeamCard name={`Prakhar Gupta`} position="Placement Coordinator"email={`placement_coordinator@iittp.ac.in`} imageUrl="/Team_photo/pc1.jpeg"/>
             <TeamCard name={`Mulamalla Harshith Reddy`} position="Placement Coordinator"email={`placement_coord@iittp.ac.in`} imageUrl="/Team_photo/pc2.png"/>
           </div>
         </div>

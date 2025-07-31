@@ -56,7 +56,7 @@ export function DirectorsMessage() {
       </p>
       <div className="mt-8 pt-6 border-t border-gray-200">
         <p className="text-gray-800 font-medium italic">Prof. K.N. Satyanarayana,</p>
-        <p className="text-gray-700 italic">Civil & Environmental Engineering Professor</p>
+        <p className="text-gray-700 italic">Civil & Environmental Engineering</p>
         <p className="text-gray-700 italic">Director, IIT Tirupati</p>
       </div>
     </div>
@@ -89,7 +89,7 @@ export function DirectorsMessage() {
             </Button>
             <div className="mt-8">
               <h3 className="text-xl font-semibold mb-2">Prof. K.N. Satyanarayana</h3>
-              <p className="text-gray-600">Civil & Environmental Engineering Professor</p>
+              <p className="text-gray-600">Civil & Environmental Engineering</p>
             </div>
           </div>
         </div>

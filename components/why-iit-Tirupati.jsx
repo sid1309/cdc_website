@@ -65,7 +65,7 @@ export function WhyiitTirupati() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Rankings</h3>
             <p className="text-white/90 mb-6 leading-relaxed">
-              Recognized among India’s leading institutions, IIT Tirupati continues to strive for academic and research excellence. Our steady rise is reflected in our current NIRF ranking of 69.
+              Recognized among India’s leading institutions, IIT Tirupati continues to strive for academic and research excellence. Our steady rise is reflected in our current NIRF ranking of 61.
             </p>
             <Button
               variant="outline"
